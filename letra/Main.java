@@ -2,7 +2,12 @@ package letra;
 
 import java.util.*;
 
-public class Letra {
+/**
+ * author: antonio
+ * atividade: Letra que não se repete
+ */
+
+public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();

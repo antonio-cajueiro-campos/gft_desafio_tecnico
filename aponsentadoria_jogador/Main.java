@@ -2,7 +2,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Aposentadoria {
+/**
+ * author: antonio
+ * atividade: Aponsentadoria Jogador
+ */
+
+public class Main {
 	public static void main(String[] args) {
 		try {
 			Date nascimento = new SimpleDateFormat("dd/MM/yyyy").parse("03/01/2000");

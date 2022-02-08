@@ -3,7 +3,12 @@ package inverter_um_inteiro;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Inverte {
+/**
+ * author: antonio
+ * atividade: Inverter um inteiro
+ */
+
+public class Main {
 	public static void main(String[] args) {
 		Long[] dadosEntrada = new Long[]{
 			15485448L,

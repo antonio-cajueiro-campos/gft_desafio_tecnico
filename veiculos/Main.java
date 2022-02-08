@@ -12,7 +12,7 @@ public class Main {
                 "preto",
                 "10",
                 false,
-                10,
+                0,
                 0,
                 20.00050
         );

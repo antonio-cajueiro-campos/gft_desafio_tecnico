@@ -13,7 +13,7 @@ public class Main {
 			Date nascimento = new SimpleDateFormat("dd/MM/yyyy").parse("03/01/2000");
 			Jogador jogador = new Jogador("Antonio", "meio-campo", nascimento);
 
-			jogador.toString();
+			System.out.println(jogador);
 
 			jogador.tempoParaAposentar();
 

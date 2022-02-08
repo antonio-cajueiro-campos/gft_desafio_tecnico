@@ -19,6 +19,9 @@ public class Main {
         System.out.println(veiculo);
         veiculo.ligar();
         veiculo.abastecer(20);
+        veiculo.abastecer(20);
+        veiculo.abastecer(20);
+        veiculo.abastecer(20);
         veiculo.acelerar();
         veiculo.acelerar();
         veiculo.frear();

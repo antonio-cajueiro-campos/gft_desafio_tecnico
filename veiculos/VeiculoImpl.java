@@ -102,12 +102,14 @@ public class VeiculoImpl implements Veiculo{
     @Override
     public void abastecer(int combustivel) {
         if ((combustivel + litrosCombustivel) <= 60) {
-            this.litrosCombustivel = combustivel;
+            this.litrosCombustivel += combustivel;
+            System.out.println("adicionado "+combustivel+" litros de combustivel");
         } else {
-            int newComb = this.litrosCombustivel - 60;
-            this.litrosCombustivel = newComb;
+            int newComb = 60 - this.litrosCombustivel;
+            this.litrosCombustivel += newComb;
             System.out.println("tanque cheio");
         }
+        System.out.println("combustível atual: "+ litrosCombustivel);
     }
 
     @Override

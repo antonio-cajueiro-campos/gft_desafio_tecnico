@@ -17,6 +17,8 @@ public class Main {
 			if (letra.getValue() == 1) {
 				System.out.println(letra.getKey());
 				return;
+			} else {
+				System.out.println("_");
 			}
 		}
 

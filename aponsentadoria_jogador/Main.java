@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			Date nascimento = new SimpleDateFormat("dd/MM/yyyy").parse("03/01/2000");
-			Jogador jogador = new Jogador("Antonio", "atacante", nascimento);
+			Jogador jogador = new Jogador("Antonio", "meio-campo", nascimento);
 
 			jogador.toString();
 

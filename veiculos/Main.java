@@ -28,5 +28,9 @@ public class Main {
         veiculo.frear();
         veiculo.pintar("vermelho");
         veiculo.desligar();
+        veiculo.acelerar();
+        veiculo.ligar();
+        veiculo.acelerar();
+        veiculo.desligar();
     }
 }

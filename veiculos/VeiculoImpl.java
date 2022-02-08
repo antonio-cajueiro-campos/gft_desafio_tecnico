@@ -95,8 +95,13 @@ public class VeiculoImpl implements Veiculo{
 
     @Override
     public void acelerar() {
-        velocidade += 20;
-        System.out.println("velocidade atual: " +velocidade);
+        if (isLigado) {
+            velocidade += 20;
+            System.out.println("velocidade atual: " +velocidade);
+        } else {
+            System.out.println("ligue o veiculo primeiro");
+        }
+
     }
 
     @Override

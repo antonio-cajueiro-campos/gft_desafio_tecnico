@@ -13,11 +13,17 @@ public class Main {
 		String line = scanner.nextLine();
 		HashMap<String, Integer> mapa = counting(line.replace(" ", "").toLowerCase());
 
-		for(Map.Entry<String, Integer> letra : mapa.entrySet()) {
-			if (letra.getValue() == 1) {
-				System.out.println(letra.getKey());
+		for(Iterator<Map.Entry<String, Integer>> it = mapa.entrySet().iterator(); it.hasNext(); ) {
+			Map.Entry<String, Integer> entry = it.next();
+
+			Integer valor = entry.getValue();
+			String key = entry.getKey();
+			it.remove();
+
+			if (valor == 1) {
+				System.out.println(key);
 				return;
-			} else {
+			} else if (mapa.size() == 0) {
 				System.out.println("_");
 			}
 		}
@@ -26,15 +32,15 @@ public class Main {
 	}
 
 	public static HashMap<String, Integer> counting(String str) {
-		HashMap<String, Integer> tmap = new HashMap<>();
+		HashMap<String, Integer> map = new HashMap<>();
 		for(char item : str.toCharArray()) {
-			Integer s = tmap.get(String.valueOf(item));
-			if (s != null) {
-				tmap.put(String.valueOf(item), ++s);
+			Integer string = map.get(String.valueOf(item));
+			if (string != null) {
+				map.put(String.valueOf(item), ++string);
 			} else {
-				tmap.put(String.valueOf(item), 1);
+				map.put(String.valueOf(item), 1);
 			}
 		}
-		return tmap;
+		return map;
 	}
 }
